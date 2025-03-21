@@ -1,0 +1,11 @@
+.float-right {
+    float: right;
+}
+
+.feed-blog ul li {
+    margin: 20px 0;
+}
+
+.feed ul li {
+    border: none;
+}
