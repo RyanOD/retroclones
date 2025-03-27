@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Tips for Aspiring Game Developers - Retro Clones</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+        <link rel="icon" type="image/png" href="../images/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
+        <link rel="shortcut icon" href="../images/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="RetroClones" />
+        <link rel="manifest" href="../images/site.webmanifest" />
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="/" class="logo">
+									<span class="symbol"><img src="../images/logo.svg" alt="Retro Clones Logo" /></span><span class="title">Retro Clones</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../blog.html">Blog</a></li>
+                            <li><a href="../games.html">Games</a></li>
+                            <li><a href="../about.html">About</a></li>
+                            <li><a href="../contact.html">Contact</a></li>
+                            <li><a href="../elements.html">Elements</a></li>
+                        </ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+                            <h1>Tips for aspiring game developers</h1>
+							<span class="image main"><img src="../images/pygame-wide.jpg" alt="Pygame logo" /></span>
+                            <p>If you're new to game development, building your first game can be overwhelming. At first glance, simple games like Pong or Lunar Lander may seem simple. This is especially true in the modern gaming era where remarkably well designed games are released weekly, if not daily.</p>
+
+                            <h2>Focus on incremental progress</h2>
+                            <p>This advice is true in all aspects of life. Any big accomplishment is just the combined output of many small accomplishments. Successful software developers (games or otherwise) have at least one characteristic in common - the ability to break large, complex problems down into small, simple tasks.</p>
+
+                            <p>Say you want to build a Super Mario Bros. clone. Where to begin? The same place you should begin any game clone. By breaking the game down into smaller, more achieveable tasks. Rendering Mario to the screen. Moving Mario left and right. Allowing Mario to jump. Adding physics so Mario comes back down to the ground, etc.</p>
+
+                            <h2>Know when to take a break</h2>
+                            <p>Everyone gets exhasuted. Getting started building games can be exciting and it can be easy to find yourself up late banging out code. However, game development is complicated and demands careful planning, attention to detail, and the ability to understand complicated, interconnected systems. It's difficult to do any of this when we're exhausted. We believe there are three pillars to performing at our best: getting good sleep, eating healthy, and getting exercise. Take the time to take a break. Go for a walk. Eat some fruit. Drink some water. Generally speaking, take care of yourself.</p>
+
+                            <h2>Watch game development tutorials</h2>
+                            <p>It's ok to use game development tutorials. It can be a great way to get started. Even if you're already building games, watching how other developers structure their games can be very educational. The key is to be open to new ideas and new approaches. Struggling to understand why a specific design decision was made? Consider reaching out to the developer and asking.</p>
+
+                            <h2>Build word games</h2>
+                            <p>If you're really new to game development, beginning with word based games can be a great way to get started. Cloning games like hangman, Wordle, or sudoku will present plenty of coding challenges while reducing the overhead of developing game graphics and adding sound.</p>
+
+                            <h2>Keep a Game Development Journal</h2>
+                            <p>Building a game, even a simple one, involves hundreds of decisions and is likely to take a beginner days or weeks. Doe to lack of experience, beginning game developers will make some bad design decisions. Later, the implications of such decisions will become evident, but without any notes, it can be very difficult to remember <i>why</i> you made that decision in the first place.</p>
+                            <p>The first time I built a Frogger clone, I took the time to structure my game levels in the following manner:</p>
+                            <pre><code>class Level:
+    self.lanes = Lane.get_lanes()
+class Lane:
+    self.objects = Objects.get_objects()
+    self.speed
+    self.y
+class Object:
+    self.x</code></pre>
+                            <p>I allowed the Lane class to control the movement of all assigned objects. This made sense until later when I was working on setting up the "frog on a log" movement. First, because each object didn't manage it's own movement (movement was handled in its associated Lane object), updating the Frog x-position was more complicated. Second, setting up the Observer pattern would need to be less conventional. At the time, I had limited experience with game design patterns so deviating from anything conventional wasn't easy for me.</p>
+                            <h2>Get involved in your local game development community</h2>
+                            <p>Many larger communities (<a href="https://www.meetup.com/detroit-game-devs/">Detroit</a>, <a href="https://www.seattleindies.org/">Seattle</a>, <a href="https://sfgamedevelopment.com/">San Francisco</a>) have indie game development groups you can become a part of - no experience required! Even if you're just getting started, drop in on social events, introduce yourself, and listen to what others have to say. You'll make connections, hear about upcoming indie games, and hear what's going on from other aspiring game developers.</p>
+
+                            <h2>Work with a partner</h2>
+                            <p>Know others interested in being a part of game development? Ask them to partner up! Whether they're an aspiring coder, a graphic artist, writer, etc, they can help reduce your work load and help you deliver a more professional final product.</p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Follow and Support</h2>
+								<ul class="icons">
+                                    <li><a href="https://www.youtube.com/@retroclones" class="icon brands style2 fa-youtube"><span class="label">YouTube</span></a></li>
+									<li><a href="https://x.com/retroclones" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.instagram.com/retroclones/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+                                    <li><a href="https://patreon.com/RetroClones" class="icon brands style2 fa-patreon"><span class="label">Pateron</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; 2025. All rights reserved</li><li>Theme Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+        <!-- 100% privacy-first analytics -->
+        <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+	</body>
+</html>
